@@ -1,0 +1,63 @@
+A. Phonebook
+time limit per test2 seconds
+memory limit per test256 megabytes
+Write a program that manages a phonebook. Input for your program is a series of commands. Every command can either update the phonebook or query it.
+
+You must use a custom HashTable implementation.
+
+Input
+First line contains N
+ (0<N≤104
+). Next N
+ lines contain commands (one per line):
+
+ADD <Contact name>,<phone> — add a phone number <phone> to contact <Contact name>; the contact should be created if not exists; examples:
+
+ADD Ivan Ivanov,+79991234567
+ADD Bro,89990123456
+ADD Ivan Ivanov,+71234567890
+DELETE <Contact name> — delete entire contact from the phonebook; examples:
+
+DELETE Ivan Ivanov
+DELETE <Contact name>,<phone> — delete a specific phone number from a contact; if a contact does not exist or it does not have specified phone number — do nothing; examples:
+
+DELETE Ivan Ivanov,+79991234567
+FIND <Contact name> — lookup contact info; this is the only command that has output:
+
+if contact is not found (or has no associated phone numbers) output No contact info found for <Contact name>, e.g.:
+Output
+For every FIND command output should contain a line with search results.
+
+If contact is not found (or has no associated phone numbers) output No contact info found for <Contact name>.
+
+Otherwise output all phone numbers associated with the contact in the following format: Found <K> phone numbers for <Contact name>: <phone> <phone> ... <phone> .
+
+Examples
+InputСкопировать
+2
+ADD Shalne Howe,+79519500277
+FIND Shalne Howe
+OutputСкопировать
+Found 1 phone numbers for Shalne Howe: +79519500277
+InputСкопировать
+4
+ADD Christian Youlton,+79006612821
+ADD Brigid Ranitta,+79509543432
+FIND Christian Youlton
+DELETE Brigid Ranitta,+79509543432
+OutputСкопировать
+Found 1 phone numbers for Christian Youlton: +79006612821
+InputСкопировать
+8
+ADD Ibbie Kinnie,+79712505112
+ADD Minny Aurelie,+79778419074
+ADD Joelly Larkin,+79287280444
+ADD Monah Clippard,+79238851500
+FIND Yasmin Howie
+ADD Joelly Larkin,+79150542840
+DELETE Carina Kenon,+79866701291
+FIND Joelly Larkin
+OutputСкопировать
+No contact info found for Yasmin Howie
+Found 2 phone numbers for Joelly Larkin: +79287280444 +79150542840
+
