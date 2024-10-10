@@ -1,0 +1,45 @@
+A. Building BST
+time limit per test2 seconds
+memory limit per test256 megabytes
+Given some numbers, build a binary search tree (BST).
+
+You must implement and use an AVL tree or a Red-Black tree. You implementation must be generic in the type of keys.
+
+Input
+Input starts with a line with one number N (0 < N <  = 105). The next line has N integer numbers.
+
+Output
+Start output with N — number of nodes in binary search tree.
+
+In the next N lines output information about nodes (one node per line). For each node output integer value xi at node i, li (index of the left node or  - 1) and ri (index of the right node or  - 1).
+
+In the final line output the index of the root node.
+
+Node indexing starts with 1 and does not have to preserve input order.
+
+Examples
+InputСкопировать
+3
+1 2 3
+OutputСкопировать
+3
+2 2 3
+1 -1 -1
+3 -1 -1
+1
+InputСкопировать
+7
+4 2 6 1 3 5 7
+OutputСкопировать
+7
+1 -1 2
+2 -1 3
+3 -1 4
+4 -1 5
+5 -1 6
+6 -1 7
+7 -1 -1
+1
+Note
+
+
