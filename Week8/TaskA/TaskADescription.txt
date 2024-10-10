@@ -1,0 +1,49 @@
+A. Many segments intersection
+time limit per test5 с
+memory limit per test1024 МБ
+Write a program that given a collection of line segments detects if any two intersect.
+
+You must implement and use a generic comparison-based sorting algorithm (Merge-Sort, Quick-Sort, or Heap-Sort). You must implement and use a generic self-balancing binary search tree (AVL tree, Red-Black tree, 2-3 tree, or B-tree). Your tree implementation must include insert and delete methods that are used in the main algorithm.
+
+The main program should follow the idea of the sweep line algorithm and use your implementation of sorting and self-balancing tree.
+
+Input
+First line of the input contains a number N
+ (0<N<106
+). Each of the next N
+ lines contains a description of a segment PQ
+, consisting of 4 coordinates separated by spaces: xPyPxQyQ
+. Coordinates are all integers (−221≤x,y≤221
+).
+
+Output
+If there are no intersections, output NO INTERSECTIONS. Otherwise, output INTERSECTION on the first line and any two segments that intersect on the second and third lines, using the same format as input.
+
+Examples
+InputСкопировать
+2
+3 90 8 92
+1 99 6 91
+OutputСкопировать
+INTERSECTION
+3 90 8 92
+1 99 6 91
+InputСкопировать
+3
+121316 -1988767 120756 -1988674
+121584 -1988690 122016 -1988486
+122342 -1989139 122660 -1989142
+OutputСкопировать
+NO INTERSECTIONS
+InputСкопировать
+5
+-10 0 10 0
+-8 1 -7 1
+0 1 0 -1
+5 1 6 1
+7 1 8 1
+OutputСкопировать
+INTERSECTION
+-10 0 10 0
+0 1 0 -1
+
