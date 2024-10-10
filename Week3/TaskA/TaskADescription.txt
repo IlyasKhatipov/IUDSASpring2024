@@ -1,0 +1,26 @@
+A. Frequency analysis
+time limit per test2 seconds
+memory limit per test256 megabytes
+Given text, your task is to calculate frequency for each word.
+
+Input
+First line contains integer n
+ (1≤n≤103)
+ — number of the words in the text.
+
+Next line contains n
+ words, separated by spaces. Each word contains only english letters in lowercase, no more than 30 letters in each word.
+
+Output
+Print each word and its frequency on a separate line. Words should be sorted by frequency. If there are words with the same frequency, they should be sorted in lexicographic order.
+
+Example
+InputСкопировать
+6
+to be or not to be
+OutputСкопировать
+be 2
+to 2
+not 1
+or 1
+
