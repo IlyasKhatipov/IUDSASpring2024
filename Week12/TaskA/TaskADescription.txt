@@ -1,0 +1,85 @@
+A. Minimum spanning forest
+time limit per test5 seconds
+memory limit per test256 megabytes
+Implement a method minimumSpanningForest() that returns a minimum spanning forest of a weighted graph. You choose any suitable data structure to represent the forest. You should implement and use either Prim's algorithm or Kruskal's algorithm.
+
+Document method by summarizing the idea behind your implementation and by adding a time complexity annotation in terms of both number of vertices and edges.
+
+Using this method implement a program that reads a weighted graph from standard input and outputs some minimum spanning forest.
+
+Input
+Input graph is given as follows:
+
+first line contains two numbers N
+ (number of vertices, 1≤N≤105
+) and M
+ (number of edges, 0≤M≤N∗(N−1)2
+) separated by space symbol;
+then each of the next M
+ lines contains three numbers I
+, j
+ and w
+ — indices of edge endpoints (vertices are indexed from 1
+ to N
+) and weight of the edge (1≤w≤105
+).
+Input graph does not have loops or parallel edges.
+
+Output
+First line of output should contain a single number F
+ — number of trees in a forest. The following lines describe trees in the forest. For i
+th tree
+
+the first line contains numbers Ti
+ (number of vertices in i
+th tree) and Ri
+ (index of any vertex of that tree);
+each of the next (Ti−1)
+ lines describe an edge of i
+th tree: a triple of numbers fromj
+, toj
+ and weightj
+.
+Examples
+InputСкопировать
+3 3
+3 2 681
+1 2 788
+1 3 716
+OutputСкопировать
+1
+3 3
+3 2 681
+1 3 716
+InputСкопировать
+5 3
+3 5 720
+1 4 199
+4 2 73
+OutputСкопировать
+2
+2 3
+3 5 720
+3 4
+4 2 73
+1 4 199
+InputСкопировать
+5 10
+5 1 631
+2 5 42
+3 4 92
+3 2 874
+4 5 420
+1 3 139
+2 4 940
+1 2 239
+5 3 833
+1 4 978
+OutputСкопировать
+1
+5 3
+2 5 42
+3 4 92
+1 3 139
+1 2 239
+
