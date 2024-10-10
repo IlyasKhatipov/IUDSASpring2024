@@ -1,0 +1,69 @@
+B. Shortest network paths (extra credit)
+time limit per test10 seconds
+memory limit per test512 megabytes
+You are given a graph of a computer network where each edge has a length in meters and bandwidth. Implement a program using AdjacencyMatrixGraph to compute the shortest path from host (A) to host (B) with a requirement of minimum bandwidth (W). You need to use Dijkstra's algorithm to solve this.
+
+Input
+First line of the input contains two numbers N M, where (N) is the number of vertices and (M) is the number of edges. The following (M) lines specify edges with four integer numbers i_k j_k l_k b_k where (i_k) and (j_k) are indices of source and target vertices, (l_k) is length of (k)th edge and (b_k) is bandwidth of the edge. Last line contains three integers: two indices, for start and finish vertices, and the minimum bandwidth (W).
+
+Output
+If it is impossible to find the solution to a given problem, the program should output IMPOSSIBLE. Otherwise, first line of the output should contain three numbers n l b, where (n) is the number of vertices in the path, (l) — total length of the path and (b) — bandwidth of the path. Second line should contain (n) indices of vertices constituting the path.
+
+Examples
+InputСкопировать
+3 3
+2 1 49 59
+2 3 83 88
+1 3 83 61
+1 3 44
+OutputСкопировать
+2 83 61
+1 3 
+InputСкопировать
+5 4
+3 2 73 46
+3 5 69 8
+3 4 75 80
+1 4 49 87
+5 1 18
+OutputСкопировать
+IMPOSSIBLE
+InputСкопировать
+10 33
+8 5 2 73
+7 9 25 19
+8 4 48 59
+10 6 72 86
+8 10 23 4
+9 2 81 22
+5 4 68 61
+2 7 86 25
+9 10 17 54
+2 9 6 71
+5 3 33 76
+10 4 60 55
+9 1 60 83
+8 6 40 13
+6 10 54 57
+3 8 54 93
+5 6 96 58
+9 6 100 62
+1 4 47 77
+1 6 57 30
+6 3 62 83
+4 3 7 50
+7 10 67 88
+6 5 94 57
+1 8 64 90
+10 5 79 57
+9 5 39 43
+8 7 75 90
+1 2 34 22
+2 1 96 56
+3 4 44 60
+9 8 89 62
+3 1 49 73
+2 9 79
+OutputСкопировать
+IMPOSSIBLE
+
