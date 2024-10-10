@@ -1,0 +1,39 @@
+B. Spell checker
+time limit per test2 seconds
+memory limit per test256 megabytes
+Given 2 texts. Your task is to print all unique words from the second text that are not present in the first text.
+
+Input
+First line contains integer n
+ (1≤n≤105)
+ — number of the words in the first text.
+
+Second line contains n
+ words, separated by spaces.
+
+Third line contains integer m
+ (1≤m≤105)
+ — number of the words in the second text.
+
+Fourth line contains m
+ words, separated by spaces.
+
+Each word contains only english letters in lowercase, no more than 30 letters in each word.
+
+Output
+First line of output should contain one integer k
+ — number of unique words from the second text that are not present in the first text.
+
+Next k
+ lines should contain the words, one word per line, in the same order they appear in the second text.
+
+Example
+InputСкопировать
+6
+to be or not to be
+6
+to study or not to study
+OutputСкопировать
+1
+study
+
