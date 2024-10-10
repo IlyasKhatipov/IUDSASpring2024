@@ -1,0 +1,22 @@
+A. Connectedness
+ограничение по времени на тест1 секунда
+ограничение по памяти на тест64 мегабайта
+A road map for a number of cities is given as an adjacency matrix. Write a program that will be able to tell if any city is reachable from any other city (perhaps via other cities).
+
+Входные данные
+First line has the number of cities on a map N (1 ≤ N ≤ 1000). Each of the next N lines has N numbers (0 or 1, separated with spaces) – elements of the adjacency matrix for the graph corresponding to the road map.
+
+Выходные данные
+Your program should output YES if every city is reachable from every other city, or NO otherwise.
+
+Пример
+Входные данныеСкопировать
+5
+0 0 1 0 0
+0 0 1 0 1
+1 1 0 0 0
+0 0 0 0 0
+0 1 0 0 0
+Выходные данныеСкопировать
+NO
+
